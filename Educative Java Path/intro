@@ -1,0 +1,13 @@
+- just in time (JIT) compilers help Java achieve high performance through the use of byte-code that ca be translated into machine code
+- has own memory management system
+- multi-threaded
+
+Things Java has disabled that are in other languages e.g. C/C++:
+- pointers
+- multiple inheritance (Relevant for abstract classes)
+
+Use cases:
+- embedded system dev.
+- back end dev.
+- APIs
+
