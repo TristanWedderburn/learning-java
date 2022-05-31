@@ -16,5 +16,30 @@ Advantages:
 - data hiding (make some data private so it cannot be altered by the derived class)
 
 2. Polymorphism
+- polymorphism in OOP allows us to inherit methods from a base class and have a different implementation for it
+
 3. Abstract Classes and Interfaces
+- only show the user "what an object does" rather than  "how it does" it
+- an abstract data type (or class) is a type that only defines what operations are to be performed, rather than how
+    - we can do this using `abstract` classes or `interface`s
+
+
+- non-abstrasct/normal methods can be implemented in an `abstract` class
+
+- `interface` can be used to achieve 100% abstraction as it contains the method signatures/abstract methods an no implementation details
+    - interface can be thought of as a contract that a class has to fulfill while implementing an interface
+        - inheritting class must use `@Override` all the abstract methods declared in the interface
+
+- `default` methods (introduced in Java 8) in `interface` classes can have a body
+    - primary use case is to provide additional functionality to interfaces without breaking the inherited classes
+
+Functional Interfaces:
+- introduced in Java 8 e.g. `Predicate`, `Consumer`, `Supplier`, `Function`, etc.
+    - used by lambda expressions
+- `@FunctionalInterface` annotation for interface with only one abstract method (throws compiler error)
+
+Multiple Inheritance:
+- In java, we can implement multiple inheritance using interfaces
+    - i.e. a class can `implement` more than one interfaces and an interface can `extend` more than one interfaces
+
 4. Aggregation and Composition
