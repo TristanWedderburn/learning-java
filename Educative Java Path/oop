@@ -1,4 +1,20 @@
 1. Inheritance
+- child classes inherit all of the non-private methods and fields of the parent class
+- inheritance helps us represent "is a" relationships
+- can't inherit from a `final` class
+- use `extend` 
+
+Types of Inheritance:
+- multi-level inheritance (derived from another class that is derived)
+- multiple inheritance (derived from more than one parent class) and hybrid inheritance (multiple & multi-level combined)
+    - in Java, multiple and hybrid inheritance are applicable only using interfaces
+
+Advantages:
+- re-usability
+- avoid dupe code
+- extensibility
+- data hiding (make some data private so it cannot be altered by the derived class)
+
 2. Polymorphism
 3. Abstract Classes and Interfaces
 4. Aggregation and Composition
